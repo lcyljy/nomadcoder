@@ -1,23 +1,15 @@
-const calculator = {
-  add: function (a, b) {
-    console.log(a + b);
-  },
-  minus: function (a, b) {
-    console.log(a - b);
-  },
-  multi: function (a, b) {
-    console.log(a * b);
-  },
-  div: function (a, b) {
-    console.log(a / b);
-  },
-  powerOf: function (a, b) {
-    console.log(a ** b);
-  },
-};
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-calculator.add(4, 5);
-calculator.minus(4, 5);
-calculator.multi(4, 5);
-calculator.div(4, 5);
-calculator.powerOf(4, 5);
+
+function onLoginBtnClick() {
+  const value = loginInput.value;
+  if (value === "") {
+    alert("Please write your name");
+  } else {
+    console.log("click!!!", value);
+  }
+
+}
+
+loginButton.addEventListener("click", onLoginBtnClick);
