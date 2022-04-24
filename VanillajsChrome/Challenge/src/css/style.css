@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "cafe24";
+  src: url("../fonts/Cafe24Shiningstar.ttf");
+}
+
+@font-face {
+  font-family: "scDream7";
+  src: url("../fonts/SCDream7.otf");
+}
+
+@font-face {
+  font-family: "yellowTail";
+  src: url("../fonts/Yellowtail-Regular.ttf");
+}
+
+
+
+body {
+  margin-left: 0;
+  min-width: 800px;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(150, 70, 0, 0.6);
+  font-family: scDream7;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+}
+
+#weather{
+  margin-left: 10px;
+  font-family: cafe24;
+  font-size: 1.7rem;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+nav{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#todayTime,
+#clock {
+  display: inline-block;
+  text-align:right;
+}
+
+#login-form{
+  text-align: center;
+}
+#greeting{
+  
+  display: inline-block;
+  text-align: right;
+}
+
+#todo-form,
+#todo-List{
+  text-align: center;
+}
+
+ul{
+  padding: 30px;
+  margin: 0 auto;
+  width: 70%;
+  background-color: rgba(250, 235, 215, 0.7);
+  border-radius: 25px;
+}
+
+li{
+  list-style-type: none;
+}
+
+input{
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  border: 3px solid rgba(55, 80, 189, 0.3);
+  border-radius: 12px;
+}
+
+input::placeholder{
+  padding-left: 10px;
+  font-family: yellowTail;
+  font-size: 1.2rem;
+}
+input[type="submit"], #log-out{
+  font-family: yellowTail;
+  font-weight: bold;
+  margin-right: 30px;
+  width: 70px;
+  height: 30px;
+  border: 3px solid rgba(55, 80, 189, 0.3);
+  border-radius: 12px;
+}
+
+hr{
+  border: 2.5px solid rgba(55, 80, 189, 0.3);;
+}
+
+img{
+  position:absolute;
+  top: 90px;
+  width: 100%;
+  height: auto;
+  opacity: 80%;
+  z-index: -1000;
+}
+
