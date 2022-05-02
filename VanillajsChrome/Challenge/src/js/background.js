@@ -1,4 +1,5 @@
 const images = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// img폴더안의 그림의 개수를 파악할 수 있다면... 더 좋을것 같은데....
 
 console.log(document.body.style.backgroundImage)
 const randomImage = images[Math.floor(Math.random() * images.length)]
