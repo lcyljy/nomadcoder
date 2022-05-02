@@ -11,5 +11,8 @@ function getClock() {
 
 getClock();
 setInterval(getClock, 1000);
+
+
+
 const date = new Date();
 console.log(typeof date.getSeconds())
